@@ -1,0 +1,30 @@
+#left-ear,
+#right-ear {
+  transition: all .5s linear;
+}
+
+#bear:hover #left-ear,
+#bear:hover #right-ear {
+  transform: translateY(-10px);
+}
+
+#left-eye,
+#right-eye {
+  animation: glance 3s infinite;
+}
+
+@keyframes glance {
+
+  0% {
+    transform: translateX(5px);
+  }
+
+  50% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    transform: translateX(5px);
+  }
+
+}
